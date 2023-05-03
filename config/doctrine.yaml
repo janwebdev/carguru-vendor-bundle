@@ -1,9 +1,8 @@
 doctrine:
     orm:
         mappings:
-            Users:
-                is_bundle: false
+            CarguruVendorBundle:
+                is_bundle: true
                 type: attribute
-                dir: '%kernel.project_dir%/vendor/carguru/vendor-bundle/src/Users/Entity'
-                prefix: 'Vendor\Users\Entity'
-                alias: VendorUsers
+                dir: '/Domain'
+                prefix: 'Carguru\VendorBundle\Domain'
