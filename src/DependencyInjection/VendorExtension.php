@@ -17,7 +17,8 @@ class VendorExtension extends Extension implements PrependExtensionInterface
      */
     public function load(array $configs, ContainerBuilder $container): void
     {
-
+        $loader = new ConfigYamlFileLoader($container, new FileLocator(__DIR__ . '/../../config'));
+        $loader->load('settings.yaml');
     }
 
     /**

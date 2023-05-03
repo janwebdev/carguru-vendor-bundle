@@ -27,6 +27,8 @@
         "stof/doctrine-extensions-bundle": "^1.7",
         "symfony/dependency-injection": "^6",
         "symfony/framework-bundle": "^6",
+        "symfony/validator": "^6",
+        "symfony/security-bundle": "^6",
         "symfony/yaml": "6.2.*",
         "vich/uploader-bundle": "^1.22"
     },
@@ -67,5 +69,6 @@
         },
         "sort-packages": true
     },
+    "minimum-stability": "stable",
     "prefer-stable": true
 }
