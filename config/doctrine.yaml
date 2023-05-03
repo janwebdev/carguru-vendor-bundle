@@ -1,0 +1,9 @@
+doctrine:
+    orm:
+        mappings:
+            Users:
+                is_bundle: false
+                type: attribute
+                dir: './../src/Users/Entity'
+                prefix: 'Vendor\Users\Entity'
+                alias: VendorUsers
