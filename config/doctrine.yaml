@@ -4,6 +4,6 @@ doctrine:
             Users:
                 is_bundle: false
                 type: attribute
-                dir: './../src/Users/Entity'
+                dir: '%kernel.project_dir%/vendor/carguru/vendor-bundle/src/Users/Entity'
                 prefix: 'Vendor\Users\Entity'
                 alias: VendorUsers
