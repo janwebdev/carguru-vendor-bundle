@@ -29,6 +29,9 @@ class Client implements \Stringable
     #[ORM\Column(type: 'string', length: 5, nullable: true)]
     private string $verificationCode;
 
+    #[ORM\Column(type: 'string', length: 5, nullable: true)]
+    private string $emailVerificationCode;
+
     #[ORM\Column(name: 'accepted_age_limit', type: 'boolean', options: ["default"=>"false"])]
     private bool $acceptedAgeLimit = false;
 
@@ -115,6 +118,16 @@ class Client implements \Stringable
     public function setVerificationCode(string $verificationCode): void
     {
         $this->verificationCode = $verificationCode;
+    }
+
+    public function getEmailVerificationCode(): string
+    {
+        return $this->emailVerificationCode;
+    }
+
+    public function setEmailVerificationCode(string $emailVerificationCode): void
+    {
+        $this->emailVerificationCode = $emailVerificationCode;
     }
 
     public function isAcceptedAgeLimit(): bool
