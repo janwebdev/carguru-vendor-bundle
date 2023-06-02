@@ -110,22 +110,22 @@ class Client implements \Stringable
         $this->email = $email;
     }
 
-    public function getVerificationCode(): string
+    public function getVerificationCode(): ?string
     {
         return $this->verificationCode;
     }
 
-    public function setVerificationCode(string $verificationCode): void
+    public function setVerificationCode(?string $verificationCode): void
     {
         $this->verificationCode = $verificationCode;
     }
 
-    public function getEmailVerificationCode(): string
+    public function getEmailVerificationCode(): ?string
     {
         return $this->emailVerificationCode;
     }
 
-    public function setEmailVerificationCode(string $emailVerificationCode): void
+    public function setEmailVerificationCode(?string $emailVerificationCode): void
     {
         $this->emailVerificationCode = $emailVerificationCode;
     }
